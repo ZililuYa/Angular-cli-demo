@@ -1,0 +1,13 @@
+.navbar {
+  background-color: #1976d2;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.nav-item.active {
+  background-color: rgba(25, 147, 210, 0.5);
+}

@@ -1,0 +1,23 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+.fr {
+  float: right !important;
+}
+
+.fl {
+  float: left !important;
+}
+
+.navbar .row {
+  width: 100%;
+}
+
+
+#myTab {
+  width: 100%;
+}
+
+.max-page {
+  width: 100%;
+}

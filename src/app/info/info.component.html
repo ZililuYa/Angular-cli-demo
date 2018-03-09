@@ -1,0 +1,22 @@
+<div class="">
+  <!--<div class="alert alert-warning" *ngIf="!data">-->
+
+  <!--</div>-->
+  <div class="p-3 mb-2 bg-warning" *ngIf="!data.length">
+    加载图片中
+    <i class="fa fa-spinner fa-spin"></i>
+  </div>
+  <div class="row packery" *ngIf="data.length" style="padding-right: 0">
+    <div class="col-sm-6 col-md-4 packery-item" *ngFor="let i of data">
+      <div class="card text-white bg-info mb-3" style="width: 100%;">
+        <div class="card-header">{{i.title}}</div>
+        <div class="card-body">
+          <p class="card-text" style="overflow:hidden;"><img class="card-img-top" src="{{i.picurl_orig}}" alt="Card image cap"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 text-center">
+      <button class="btn btn-danger btn-sm" style="color: #fff" (click)="addList()">加载更多 <i class="fa fa-plus"></i></button>
+    </div>
+  </div>
+</div>
